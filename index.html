@@ -16,12 +16,6 @@
         }
         
     </style>
-    <script>
-        function goToProjectSection() {
-            var select = document.querySelector('.btnProjects');
-            var sectionId = select.value + '-projects';
-            location.href = '#' + sectionId;
-        }
 
         function copyToClipboard(text) {
             navigator.clipboard.writeText(text).then(function() {
@@ -35,13 +29,7 @@
 <body>
     <div class="header">
         <button onclick="location.href='#inicio'">Inicio</button>
-        <select class="btnProjects" onchange="goToProjectSection()">
-            <option value="" disabled selected>Proyectos</option>
-            <option value="java">Java</option>
-            <option value="python">Python</option>
-            <option value="php">PHP</option>
-            <option value="html">HTML</option>
-        </select>
+        
         <a href="Curriculum/Curriculum vitae.pdf" download="Curriculum vitae.pdf">
             <button>Descargar CV</button>
         </a>
