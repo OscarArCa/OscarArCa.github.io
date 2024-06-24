@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        .project {
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+    </style>
+    <script>
+        function goToProjectSection() {
+            var select = document.querySelector('.btnProjects');
+            var sectionId = select.value + '-projects';
+            location.href = '#' + sectionId;
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Correo copiado al portapapeles');
+            }, function(err) {
+                alert('No se pudo copiar el correo: ', err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <button onclick="location.href='#inicio'">Inicio</button>
+        <select class="btnProjects" onchange="goToProjectSection()">
+            <option value="" disabled selected>Proyectos</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="php">PHP</option>
+            <option value="html">HTML</option>
+        </select>
+        <a href="Curriculum/Curriculum vitae.docx" download="Curriculum vitae.docx">
+            <button>Descargar CV</button>
+        </a>
+        <label>
+            Contactar:
+            <span class="gmail" onclick="copyToClipboard('O.arias76510989@gamil.com')">O.arias76510989@gamil.com</span>
+        </label>
+        <label>
+            Celular:
+            <span class="cel">+51 943363296</span>
+        </label>
+    </div>
+    <div class="main-content">
+        <h3>Nombre: </h3><b><p>Oscar Jean Mario Arias Camasca</p></b>
+        <h3>Carrera: </h3><b><p>Desarrollo de software</p></b>
+    </div>
+    <div class="present">
+        <img src="image/mifoto.jpg">
+        <div>
+            <b>
+                <p>Hola, soy un programador practicante con conocimiento</p>
+                <p>básico e intermedio en múltiples lenguajes</p>
+                <p>con buenas bases en Java, Python, HTML y SQL</p>
+            </b>
+        </div>
+    </div>
+    
+    <div id="projects">
+        <center><div class="project"><h1>Proyectos</h1></div></center>
+        <center>
+        <table>
+            <tbody class="cards">
+                <tr>
+                    <td>
+                        <div class="card">
+                            <img src="image/java1.png" alt="Proyecto Java 1">
+                            <div class="description">
+                                <p><b>Simulador de cajero automático con ingreso de contarseña que muestra el saldo del usuario, permite retirar e ingrear dinero.</b></p>
+                                <a href="https://github.com/OscarArCa/Cajero_autom-tico/tree/main"><b>Github</b></a>
+                            </div>
+                        </div>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="card">
+                            <img src="image/python1.png" alt="Proyecto Python 1">
+                            <div class="description">
+                                <p><b>Inventario que consta de ingrear productos por consola con los atributos: Id, Nombre, Precio, además calcula el subtotal y el IGV.</b></p>
+                                <a href="https://github.com/OscarArCa/inventario/tree/main"><b>Github</b></a>
+                            </div>
+                        </div>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="card">
+                            <img src="image/php1.png" alt="Proyecto PHP 1">
+                            <div class="description">
+                                <p><b>Formulario hecho a base de html, php, sql y uso de boostrap. envia la informacion del formulario a el php para que se guarde en la base de datos</b></p>
+                                <a href="https://github.com/OscarArCa/formulario"><b>Github</b></a>
+                            </div>
+                        </div>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="card">
+                            <img src="image/html.png" alt="Proyecto HTML 1">
+                            <div class="description">
+                                <p><b>Calculadora basica  que usa principalmente HTML y Js para ejecutar cuatro operaciones basicas (Suma, Resta, Multiplicacion y Division)</b></p>
+                                <a href="https://github.com/OscarArCa/Calculadora_php"><b>Github</b></a>
+                            </div>
+                        </div>
+                    </td>
+                    
+                </tr>
+
+            </tbody>
+        </table>
+    </center>
+    </div>
+
+    <div class="footer">
+        <p>Más sobre mí:</p>
+        <a href="https://github.com/OscarArCa" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Github">
+            Github
+        </a>
+        <a href="https://www.linkedin.com/in/oscar-jean-mario-arias-camasca-b48287302/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn">
+            LinkedIn
+        </a>
+    </div>
+</body>
+</html>

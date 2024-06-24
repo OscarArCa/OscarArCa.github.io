@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("image/img5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header, .footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.header button,.btnProjects,.header label {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.header button:hover {
+    background-color: #555;
+}
+.main-content {
+    text-align: center;
+    margin: 20px 0;
+}
+.present {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 20px;
+}
+.present img {
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 150px;
+    height: auto;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+.card {
+    border: 2px solid #4CAF50; /* Borde más grueso y de color verde */
+    border-radius: 10px; /* Esquinas redondeadas */
+    margin: 10px;
+    width: 200px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más visible */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transición para efectos hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el mouse */
+}
+
+.card img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.card .description {
+    padding: 10px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+.footer p {
+    margin: 0 0 10px;
+}
+.footer button, .footer a {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer button:hover, .footer a:hover {
+    background-color: #555;
+}
+.footer img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.btnContactar{
+    background-color: #444;
+    color: white;
+    border: 2px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 9px;
+}
+.btnContactar {
+    font-size: 12px; /* Tamaño de letra más pequeño */
+    padding: 5px 10px; /* Reducir el tamaño del botón */
+    border: 1px solid #000; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f0f0f0; /* Color de fondo del botón */
+    margin-left: auto; /* Mueve el botón a la derecha */
+}
+.btnContactar .gmail,
+.btnContactar .cel {
+    margin: 0; /* Eliminar márgenes adicionales */
+}
